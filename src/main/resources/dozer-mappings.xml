@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping http://dozermapper.github.io/schema/bean-mapping.xsd">
+
+    <configuration>
+        <stop-on-errors>true</stop-on-errors>
+        <date-format>MM/dd/yyyy HH:mm</date-format>
+        <wildcard>true</wildcard>
+    </configuration>
+
+    <mapping map-null="false" map-id="patient-non-null">
+        <class-a>com.walltechsolutions.wallmedical.data.models.Patient</class-a>
+        <class-b>com.walltechsolutions.wallmedical.data.models.Patient</class-b>
+    </mapping>
+
+    <mapping>
+        <class-a>com.walltechsolutions.wallmedical.data.models.Patient</class-a>
+        <class-b>com.walltechsolutions.wallmedical.data.models.Patient</class-b>
+    </mapping>
+
+    <mapping>
+        <class-a>com.walltechsolutions.wallmedical.data.models.Patient</class-a>
+        <class-b>com.walltechsolutions.wallmedical.core.representationmodels.PatientRepresentation</class-b>
+    </mapping>
+
+    <mapping>
+        <class-a>com.walltechsolutions.wallmedical.data.models.Doctor</class-a>
+        <class-b>com.walltechsolutions.wallmedical.core.representationmodels.DoctorRepresentation</class-b>
+    </mapping>
+
+    <mapping>
+        <class-a>com.walltechsolutions.wallmedical.data.models.Record</class-a>
+        <class-b>com.walltechsolutions.wallmedical.core.representationmodels.RecordRepresentation</class-b>
+        <field-exclude>
+            <a>patient</a>
+            <b>patient</b>
+        </field-exclude>
+    </mapping>
+
+    <mapping>
+        <class-a>com.walltechsolutions.wallmedical.data.models.RecordDetail</class-a>
+        <class-b>com.walltechsolutions.wallmedical.core.representationmodels.RecordDetailRepresentation</class-b>
+    </mapping>
+</mappings>
