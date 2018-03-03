@@ -1,2 +1,2 @@
-# wall-medical
+# Wall Medical
 Medical management system
