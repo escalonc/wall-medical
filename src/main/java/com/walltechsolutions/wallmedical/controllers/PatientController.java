@@ -1,6 +1,6 @@
 package com.walltechsolutions.wallmedical.controllers;
 
-import com.walltechsolutions.wallmedical.core.product.PatientService;
+import com.walltechsolutions.wallmedical.core.patient.PatientService;
 import com.walltechsolutions.wallmedical.core.representationmodels.PatientRepresentation;
 import com.walltechsolutions.wallmedical.data.models.Patient;
 import org.springframework.data.domain.Page;

@@ -1,7 +1,7 @@
 package com.walltechsolutions.wallmedical.core.representationmodels;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 import java.util.HashSet;
 import java.util.Set;

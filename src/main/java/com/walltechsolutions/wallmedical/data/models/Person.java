@@ -3,6 +3,8 @@ package com.walltechsolutions.wallmedical.data.models;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Data
 @Entity
@@ -17,4 +19,7 @@ public abstract class Person {
    private String name;
    private String middleName;
    private String lastName;
+
+   @OneToMany(fetch = FetchType.LAZY)
+   private Set<Contact> contacts = new HashSet<>();
 }

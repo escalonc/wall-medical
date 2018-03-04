@@ -14,10 +14,11 @@ public class Record {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    private String medicalHistory;
+    private String personalPathologicalHistory;
+    private String familyPathologicalHistory;
+    private String allergicHistory;
 
-    @OneToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name="patient_id")
+    @OneToOne(fetch = FetchType.LAZY)
     private Patient patient;
 
     @OneToMany(mappedBy = "record", fetch = FetchType.LAZY)

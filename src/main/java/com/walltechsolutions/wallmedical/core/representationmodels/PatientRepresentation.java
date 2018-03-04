@@ -1,8 +1,8 @@
 package com.walltechsolutions.wallmedical.core.representationmodels;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 import java.time.ZonedDateTime;
 import java.util.HashSet;

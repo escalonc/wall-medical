@@ -15,7 +15,4 @@ import java.util.Set;
 public class Doctor extends Person {
 
     private String speciality;
-
-    @OneToMany(mappedBy = "doctor", fetch = FetchType.LAZY)
-    private Set<Contact> contacts = new HashSet<>();
 }
