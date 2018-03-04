@@ -12,5 +12,4 @@ public class WallMedicalApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
 }
